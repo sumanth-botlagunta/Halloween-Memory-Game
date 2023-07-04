@@ -145,19 +145,6 @@ body {
   transition: transform 100ms ease-in-out;
 }
 
-.card-face:hover .cob-web {
-  width: 52px;
-  height: 52px;
-}
-
-.card-back:hover .spider {
-  transform: translateY(0px);
-}
-
-.card-front:hover .card-value {
-  transform: scale(1);
-}
-
 .card.matched .card-front .card-value {
   animation: dance 1s linear infinite 500ms;
 }
@@ -221,6 +208,21 @@ body {
       font-size: 6em;
       background-color: rgba(0, 0, 0, 0.8);
     }
+  }
+}
+
+@media (min-width: 750px) {
+  .card-face:hover .cob-web {
+    width: 52px;
+    height: 52px;
+  }
+
+  .card-back:hover .spider {
+    transform: translateY(0px);
+  }
+
+  .card-front:hover .card-value {
+    transform: scale(1);
   }
 }
 
