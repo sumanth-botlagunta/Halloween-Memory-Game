@@ -11,13 +11,16 @@ class AudioController {
   startMusic() {
     this.bgMusic.play();
   }
+
   stopMusic() {
     this.bgMusic.pause();
     this.bgMusic.currentTime = 0;
   }
+
   flip() {
     this.flipSound.play();
   }
+
   match() {
     this.matchSound.play();
   }
